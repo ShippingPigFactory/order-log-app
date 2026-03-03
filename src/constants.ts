@@ -29,3 +29,6 @@ JSON形式のみ。余計な解説は不要です。
   "totalQuantity": 0
 }
 `;
+
+export const STAFF_LIST = ["友川", "ヒロセ", "桒村", "椎野", "松浦", "森本", "宮原"];
+export const PACKING_SIZES = ["60", "80", "100", "120", "140", "ネコポス", "コンパクト"];

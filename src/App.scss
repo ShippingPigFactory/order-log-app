@@ -6,12 +6,57 @@
   color: #333;
 }
 
+
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
   border-bottom: 2px solid #007bff;
   margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+
   h1 { margin: 0; font-size: 1.5rem; color: #007bff; }
+
+  .tabs {
+    display: flex;
+    gap: 0.5rem;
+
+    button {
+      padding: 0.5rem 1rem;
+      border: 1px solid #ccc;
+      border-bottom: none;
+      border-radius: 8px 8px 0 0;
+      background: #f0f0f0;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: bold;
+      color: #666;
+      transition: all 0.2s;
+
+      &.active {
+        background: white;
+        color: #007bff;
+        border-color: #007bff;
+        padding-bottom: 0.6rem;
+        margin-bottom: -0.6rem;
+        position: relative;
+        z-index: 2;
+      }
+      &:hover:not(.active) { background: #e0e0e0; }
+    }
+  }
 }
 
+.form-card h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  color: #333;
+  border-left: 4px solid #007bff;
+  padding-left: 10px;
+}
 .main-layout {
   display: grid;
   grid-template-columns: 350px 1fr;
