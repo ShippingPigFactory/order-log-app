@@ -4,7 +4,7 @@ import { ClipboardCopy, Loader2, Upload, Check, AlertTriangle, RefreshCw } from 
 import { SYSTEM_PROMPT, STAFF_LIST, PACKING_SIZES } from './constants';
 import './App.scss';
 
-const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
+const API_KEY = import.meta.env.VITE_GEMINI;
 const genAI = new GoogleGenerativeAI(API_KEY);
 
 type AppMode = 'return' | 'damage'; // 返品 | 破損
