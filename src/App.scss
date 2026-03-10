@@ -22,7 +22,7 @@
     gap: 0.5rem;
 
     button {
-      padding: 0.5rem 1rem;
+      padding: 0.5rem 0.8rem;
       border: 1px solid #ccc;
       border-bottom: none;
       border-radius: 8px 8px 0 0;
@@ -32,6 +32,7 @@
       align-items: center;
       gap: 6px;
       font-weight: bold;
+      font-size: 0.9rem;
       color: #666;
       transition: all 0.2s;
 
@@ -82,6 +83,7 @@
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  min-height: 500px;
 
   .grid {
     display: grid;
