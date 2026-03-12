@@ -7,7 +7,7 @@ import './App.scss';
 // APIキーとモデル名の設定
 const API_KEY = import.meta.env.VITE_GEMINI;
 const genAI = new GoogleGenerativeAI(API_KEY);
-const MODEL_NAME = "gemini-1.5-flash"; // 安定版
+const MODEL_NAME = "gemini-2.5-flash";
 
 type AppMode = 'return' | 'damage' | 'cancel';
 
